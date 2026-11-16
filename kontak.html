@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Money Laundry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar-header">
+        <div class="logo">Money Laundry</div>
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Buka Menu">&#9776;</button>
+        <nav id="navMenu">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Usaha</a>
+            <a href="katalog.html">Katalog Layanan</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Hubungi Kami</h1>
+            <p>Silakan tinggalkan pesan atau konsultasikan kebutuhan laundry Anda.</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <p><strong>Alamat:</strong> Jl.jendral sudirman</p>
+                    <p><strong>Telepon:</strong> 081234567890</p>
+                    <p><strong>Email:</strong> info@moneylaundry.com</p>
+
+                    <h3>Media Sosial</h3>
+                    <ul>
+                        <li>Instagram: @moneylaundry_id</li>
+                        <li>Facebook: Money Laundry Indonesia</li>
+                    </ul>
+
+                    <h3>Peta Lokasi</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.273187122116!2d106.8205!3d-6.2274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTMnMzguNiJTIDEwNsKwNDknMTMuOCJF!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Formulir Pesan</h2>
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap:</label>
+                            <input type="text" id="nama" name="nama" required>
+                            <span class="error-msg" id="namaError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Alamat Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-msg" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">081272177357:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,13}" required>
+                            <span class="error-msg" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="layanan">Pilihan Layanan:</label>
+                            <select id="layanan" name="layanan" required>
+                                <option value="">-- Pilih Layanan --</option>
+                                <option value="kiloan">Cuci Kiloan</option>
+                                <option value="satuan">Cuci Satuan</option>
+                                <option value="sepatu">Cuci Sepatu/Tas</option>
+                            </select>
+                            <span class="error-msg" id="layananError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Pesan / Catatan Khusus:</label>
+                            <textarea id="pesan" name="pesan" minlength="10" maxlength="300" required></textarea>
+                            <span class="error-msg" id="pesanError"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                        <div id="formSuccess" class="success-msg"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Money Laundry. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

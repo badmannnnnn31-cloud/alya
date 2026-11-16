@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Layanan - Money Laundry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar-header">
+        <div class="logo">Money Laundry</div>
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Buka Menu">&#9776;</button>
+        <nav id="navMenu">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html">Tentang Usaha</a>
+            <a href="katalog.html" class="active">Katalog Layanan</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-header">
+            <h1>Daftar Layanan & Paket</h1>
+            <p>Pilih kategori atau cari layanan laundry sesuai kebutuhan Anda.</p>
+            
+            <div class="catalog-tools">
+                <input type="text" id="searchInput" placeholder="Cari layanan...">
+                <select id="filterCategory">
+                    <option value="all">Semua Kategori</option>
+                    <option value="kiloan">Kiloan</option>
+                    <option value="satuan">Satuan</option>
+                    <option value="sepatu">Sepatu & Tas</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="catalog-grid" id="catalogContainer">
+            <article class="card" data-category="kiloan">
+                <img src="img/cuci-reguler.jpg" alt="Cuci Kiloan Reguler">
+                <div class="card-body">
+                    <h3>Cuci Kiloan Reguler</h3>
+                    <p>Cucian bersih, harum, dan disetrika rapi dengan estimasi selesai 2 hari.</p>
+                    <span class="price">Rp 7.000 / kg</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="kiloan">
+                <img src="img/cuci-ekspres.jpg" alt="Cuci Kiloan Ekspres">
+                <div class="card-body">
+                    <h3>Cuci Kiloan Ekspres</h3>
+                    <p>Layanan kilat cuci dan setrika rapi selesai dalam waktu 6 jam saja.</p>
+                    <span class="price">Rp 12.000 / kg</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="satuan">
+                <img src="img/cuci-jas.jpg" alt="Cuci Jas & Blazer">
+                <div class="card-body">
+                    <h3>Cuci Jas & Blazer</h3>
+                    <p>Perawatan khusus dry cleaning untuk jas formal agar tetap presisi dan awet.</p>
+                    <span class="price">Rp 35.000 / pcs</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="satuan">
+                <img src="img/cuci-gaun.jpg" alt="Cuci Gaun Pesta">
+                <div class="card-body">
+                    <h3>Cuci Gaun Pesta</h3>
+                    <p>Pembersihan mendalam dan lembut untuk gaun dengan pernak-pernik sensitif.</p>
+                    <span class="price">Rp 50.000 / pcs</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="sepatu">
+                <img src="img/cuci-sepatu.jpg" alt="Deep Cleaning Sepatu Sneaker">
+                <div class="card-body">
+                    <h3>Deep Cleaning Sepatu Sneaker</h3>
+                    <p>Pembersihan total outsole, insole, dan upper sepatu kesayangan Anda.</p>
+                    <span class="price">Rp 30.000 / pasang</span>
+                </div>
+            </article>
+
+            <article class="card" data-category="sepatu">
+                <img src="img/cuci-tas.jpg" alt="Laundry Tas Kulit & Backpack">
+                <div class="card-body">
+                    <h3>Laundry Tas Kulit & Backpack</h3>
+                    <p>Perawatan bahan kulit dan ransel dengan bahan pembersih ramah material.</p>
+                    <span class="price">Rp 40.000 / pcs</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Money Laundry. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
